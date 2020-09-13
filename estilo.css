@@ -1,0 +1,1468 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+html, body{
+    margin: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+ 
+/*---------------------------------------CONSTANTES-------------------------------------------*/
+.center{    text-align: center;    }
+.justify{    text-align: justify;   }
+.paragrafo{   text-indent: 30px;    }
+
+.destaque{    background-color: #f7f7f7;    }
+
+h1, h2{    line-height: 1.2;    }
+h3{
+    padding: 30px 0 20px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 35px ;
+    line-height: 1.2;
+}
+h4{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.2;
+}
+h5{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+section{
+    padding: 20px;
+    float: left;
+    position: relative;
+    z-index: 5;
+    background-color: white;
+}
+
+.coluna{
+    float: left;
+    padding: 0 2.5%;
+    position: relative;
+    margin: 0;
+}
+.dois{    width: 45%;   }
+.quatro{    width: 20%;   }
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------MENU RESPONSIVO---------------------------------*/
+#visibilidade{
+    visibility: hidden;
+}
+#check{
+    display: none;
+}
+#icone_responsivo{
+    cursor: pointer;
+    padding: 2px 10px ;
+    position: absolute;
+    z-index: 11;
+}
+.menu_responsivo{
+    background-color: red;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+nav a{
+    text-decoration: none;
+}
+.link_responsivo{
+    background-color: chartreuse;
+    padding: 20px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid blue;
+    opacity: 0;
+    margin-top: 200px ;
+}
+.link_responsivo:hover{
+    background-color: tomato;
+
+}
+#check:checked ~ .menu_responsivo{
+    transform: translateX(300px);
+}
+#check:checked ~ .menu_responsivo nav a .link_responsivo{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------HEADER-----------------------------------------*/
+header{
+    background-color: #495f2c;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    padding: 0;
+    margin-left: 2%;
+}
+#menu{
+    margin-top: 10px;
+    float: right;
+    margin-right: 2%;
+    list-style: none;
+}
+li{
+    float: left;
+    padding: 2px 10px;
+    font-size: 20px;
+}
+li:hover {
+    color: rgb(0, 255, 0);
+    font-size: 24px;
+
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------CAPA-----------------------------------------*/
+#efeito{
+    height: 90%;
+    width: 100%;
+}
+#imagem-fundo{
+    background: url(img/CAPA.jpg);
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    position: fixed;
+    z-index: 0;
+}
+#titulo{
+    font-size: 85px; 
+    margin: 0 25%;
+    padding-top: 13%;
+    color: white;
+    text-shadow: 0px 0px 15px black ;
+    border-bottom: 7px rgba(250, 250, 250, 0.575) double;
+}
+#subtitulo{
+    border-top: 7px rgb(57 98 13) double;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:32px;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+}
+#link_ods2{
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+    border: 1px yellowgreen solid ;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 128, 0, 0.4);
+}
+#link_ods2:hover{
+    border: 1px green solid;
+    background-color: rgba(0, 128, 0, 0.8);
+    font-size: 19px;
+    
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+#minutos{
+    padding: 10px 5px 1px 5px;
+    margin: 8% 40% 0 40%;
+    border: 1px yellowgreen solid ;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.4);
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------O PROJETO SEÇÃO 1-----------------------------------*/
+#projeto{
+    margin: 0;
+    padding:0;
+    height: 135%;
+    border-left: 40px #dfa738 solid;
+}
+#d_img_ods{
+    padding: 0 ;
+    margin: 0;
+}
+#img_ods{
+    padding-top: 18%;
+    width: 240px;
+}
+#o_projeto{
+    top: 10px;
+    float: left;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+#conteudo1{
+    padding-left: 5%;
+    padding-top: 6% ;
+    padding-bottom: 1% ;
+    margin: 0;
+}
+#conteudo1_1{
+    padding-top: 5.5%;
+}
+#link_ods{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.801);
+}
+#link_ods:hover{
+    color: #dfa738;
+    
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#video_ibge{
+    padding-top: 5% ;
+    padding-left: 0;
+    padding-right: 0;
+}
+#video{
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------METAS SEÇÃO 2-----------------------------------*/
+#metas{
+    margin: 0;
+    padding: 3% 0 0 0;
+    height: 120%;
+    border-left: 40px #a7c73a solid ;
+}
+.icon{
+    width: 100px;
+    margin: 0;
+    padding: 9px;
+    border-radius: 45px;
+    text-align: center;
+}
+.icon:hover{
+    padding: 10px;
+    border: 0;
+    border-radius: 68px;
+    background-color: #a7c73a ;
+    
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------O BRASIL SEÇÃO 3-----------------------------------*/
+#brasil{
+    margin: 0;
+    padding: 3% 0 0 0;
+    height: 105%;
+    border-left: 40px #fd4b15 solid ;
+}
+
+#conteudo2{
+    padding-top: 3%;
+}
+
+/*-------              GRAFICO             -------*/
+.grafico-barras{
+    width: 100%;
+    height: 400px ;
+}
+
+.grafico-barras .colunas{
+    display: flex;
+    flex-direction: row;
+    height: 100% ;
+}
+
+.grafico-barras .colunas .escala-y {
+    width: 80px ;
+    display: flex;
+    flex-direction: column;
+}
+.grafico-barras .colunas .escala-y .divisao{
+    height: calc( (100%) / 6);
+    text-align: end;
+    padding-right: 5px;
+}
+
+.grafico-barras .colunas .area-grafico{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column ;
+}
+
+.grafico-barras .colunas .area-grafico .area-barras{
+    flex-grow: 1;
+    border-left: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(160, 160, 160) ;
+    display: flex; 
+    position: relative;
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao{
+    width: calc(100% / 9);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao .barra{
+    width: 80% ;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+    background: #fd4b15;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x{
+    padding-top: 5px;
+    height: 60px;
+    display: flex;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x .divisao{
+    width: calc(100% / 9);
+    text-align: center;
+}
+
+.n{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 20px; 
+}
+.n:hover{
+    color:black  ;
+    text-shadow: 1px 1px 5px #fd4b15;
+
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+
+#a80:hover, #a85:hover, #a90:hover, #a95:hover, #a00:hover, #a05:hover, #a10:hover, #a15:hover, #a17:hover{ 
+    background: #fd4b159d; 
+    
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+/*----------------------------------------------------*/
+#titulo-grafico{
+    padding: 3% 0 0 10%;
+}
+#grafico{
+    margin: 0;
+    padding: 1% 0 0 0 ;
+}
+#fonte{
+    margin: 0;
+    padding: 0;
+    left: 45%;
+    bottom: 25px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------PANDEMIA SEÇÃO 4---------------------------------------*/
+#pandemia{ 
+    margin: 0;
+    padding: 3% 0 0 0;
+    height: 90%;
+    border-left: 40px #fbc55d solid ;
+}
+#video_pandemia{
+    padding-top: 20px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------MOVA-SE SEÇÃO 5---------------------------------------*/
+#mova{
+    margin: 0;
+    padding: 3% 0 0 0;
+    height: 370%;
+    border-left: 40px #ea2d13 solid ;
+}
+#crianca1{
+    margin: 20px 0;
+    width: 40%;
+    border-radius: 10px;
+}
+.img_ong{
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+}
+.link_mova:hover{
+   color: #ea2c13e8 ; 
+   
+   transition-property: all;
+   transition-duration: 0.2s;
+}
+#ong4{
+    margin-top: -35px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------SOBRE MIM SEÇÃO 6-------------------------------------*/
+#sobre{
+    margin: 0;
+    padding: 3% 0 0 0;
+    border-left: 40px #669f98 solid ;
+    height: 90%;
+}
+#myphoto{
+    width: 70% ;
+    border-radius: 5px;
+    margin: 0;
+}  
+#gratidao:hover{
+    color: #669f98;
+    
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+footer {
+    background-color: #495f2c;
+    float: left;
+    width: 100%;
+    height: 25%;
+    color: white;
+    position: relative;
+}
+#ja{
+    margin: 3% 0 3% 5%;
+    padding: 0;
+}
+#social{
+    padding: 2% 0 0 4% ;
+}
+.link_footer:hover{
+    color: rgba(0, 0, 0, 0.76) ;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.icon_footer{
+    float: left;
+    width: 30px;
+}
+.c{
+    padding-right: 75%;
+}
+.contato{    
+    float: left;
+
+    padding-top: 3px;
+    padding-left: 5px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1085px){
+    #minutos{
+        margin-top: 6% ;
+    }
+
+    #projeto{
+        height: 160%;
+    }
+
+    #metas{
+        height: 160%;
+    }
+
+    #brasil{
+        height: 120%;
+    }
+
+    #pandemia{
+        height: 100%;
+    }
+
+    #mova{
+        height: 400%;
+    }
+    .img_ong{
+        height: 400px;
+    }
+    #ong1{
+        margin-top: 25px;
+    }
+    #ong4{
+        margin-top: -10px;
+    }
+
+    #sobre{
+        height: 110%;
+    }
+
+    #footer{
+        height: 35%;
+    }
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+@media all and (max-width: 1024px){
+    #minutos{
+        margin-top: 7% ;
+    }
+
+    #projeto{
+        height: 160%;
+    }
+
+    #metas{
+        height: 160%;
+    }
+
+    #brasil{
+        height: 120%;
+    }
+
+    #pandemia{
+        height: 100%;
+    }
+
+    #mova{
+        height: 400%;
+    }
+    .img_ong{
+        height: 400px;
+    }
+    #ong2{
+        margin-top: 30px;
+    }
+    #ong4{
+        margin-top: -36px;
+    }
+
+    #sobre{
+        height: 110%;
+    }
+
+    #footer{
+        height: 35%;
+    }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+@media all and (max-width: 768px) {
+    
+
+    
+    body{
+        display: block;
+    }
+
+    
+    .coluna, .dois, .quatro{
+        display: block;
+        width: 80vw;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    /*---------------------------------------MENU RESPONSIVO---------------------------------*/
+#visibilidade{
+    visibility: visible;
+}
+#icone_menu{
+    width: 40px;
+}
+#check{
+    display: none;
+}
+#icone_responsivo{
+    cursor: pointer;
+    padding: 2px 10px ;
+    position: fixed;
+    z-index: 12;
+}
+.menu_responsivo{
+    background-color: #495f2c;
+    height: 55%;
+    width: 100px;
+    position: fixed;
+    z-index: 11;
+    transition: all .2s linear;
+    left: -100px;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+}
+nav a{
+    text-decoration: none;
+}
+.link_responsivo{
+    background-color:#495f2c7a;
+    padding: 10px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid #3b4e22;
+    opacity: 0;
+    margin-top: 1px ;
+    text-align: center;
+}
+.link_responsivo:hover{
+    background-color: #2d4114;
+}
+#check:checked ~ .menu_responsivo{
+    transform: translateX(100px);
+}
+#check:checked ~ .menu_responsivo nav a .link_responsivo{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*----------------------------------------HEADER-----------------------------------------*/
+    header{
+        height: 50px;
+        width: 100vw;
+    }
+    #logodiv{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #logo{
+        width: 80px;
+        top: -20px;
+        padding: 0;
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
+    #menu{
+        visibility: hidden;
+    }
+/*-------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------CAPA-----------------------------------------*/
+    #imagem-fundo{
+    background: url(img/CAPA.jpg);
+    height: 80vw;
+    width: 100vw;
+    text-align: center;
+    background-size: cover;
+    }
+    #titulo{
+    font-size: 15vw; 
+    margin: 0 25vw;
+    padding-top: 15vw;
+    border-bottom: 1vw rgba(250, 250, 250, 0.575) double;
+    }
+    #subtitulo{
+    border-top: 1vw rgb(57 98 13) double;
+    font-size: 4vw;
+    }
+    #link_ods2{
+    font-size: 2vw;
+    }
+    #link_ods2:hover{
+    font-size: 2.1vw;
+    }
+/*-------------------------------------------------------------------------------------*/
+
+/*-----------------------------O PROJETO SEÇÃO 1-----------------------------------*/
+#projeto_responsivo{
+    transform: translateX(-18px)
+}
+#projeto{
+    width: 96vw;
+    height: 300%;
+    border-left: 5vw #dfa738 solid;
+}
+#d_img_ods{
+    padding-top: 20vw;
+    width: 100%;
+}
+#img_ods{
+    padding-top: 5%;
+    width: 50%;
+}
+#o_projeto{
+    padding: 0;
+}
+#conteudo1{
+    padding-left: 8%;
+    padding-top: 6vw ;
+}
+#conteudo1_1{
+    top: -20px;
+}
+
+/*---------------------------------------------------------------------------------------*/ 
+
+/*-----------------------------METAS SEÇÃO 2-----------------------------------*/
+#meta_responsivo{
+    transform: translateX(-25px);
+}
+#metas{
+    height: 260%;
+    width: 95vw;
+    border-left: 5vw #a7c73a solid ;
+}
+.icon{
+    width: 15vw;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*-----------------------------O BRASIL SEÇÃO 3-----------------------------------*/
+#brasil_responsivo{
+    transform: translateX(-30px);
+}
+#brasil{
+    height: 200%;
+    width: 100vw;
+    border-left: 5vw #fd4b15 solid ;
+}
+
+#conteudo2{
+    text-align: none;
+}
+
+#titulo-grafico{
+    padding-top: 30px;
+}
+
+#grafico{
+    padding-left: 5vw;
+    right: 2vw;
+}
+
+/*-------              GRAFICO             -------*/
+.grafico-barras{
+    height: 400px ;
+}
+
+.grafico-barras .colunas .escala-y .divisao{
+    font-size: 14px;
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao{
+    width: calc(80% / 9);
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao .barra{
+    width: 40% ;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x{
+    font-size: 14px;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x .divisao{
+    width: calc(80% / 9);
+}
+/*----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+/*-----------------------------PANDEMIA SEÇÃO 4---------------------------------------*/
+#pandemia_responsivo{
+    transform: translateX(-15px);
+}
+#pandemia{ 
+    height: 170%;
+    width: 95.1vw;
+    border-left: 5vw rgb(255, 255, 30) solid ;
+}
+#video_pandemia{
+    padding-bottom: 30px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*-------------------------------MOVA-SE SEÇÃO 5---------------------------------------*/
+#mova_responsivo{
+    transform: translateX(-30px);
+}
+#mova{
+    width: 100vw;
+    height: 720%;
+    border-left: 5vw #ea2d13 solid ;
+}
+#crianca1{
+    margin: 20px 0;
+    width: 70%;
+    border-radius: 10px;
+}
+.img_ong{
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+}
+.link_mova:hover{
+   color: #ea2c13e8 ; 
+   transition-property: all;
+   transition-duration: 0.2s;
+}
+#ong4{
+    margin-top: -35px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*-------------------------------SOBRE MIM SEÇÃO 6-------------------------------------*/
+#sobre{
+    width: 95vw;
+    border-left: 5vw #669f98 solid ;
+    height: 170%;
+}
+#myphoto{
+    width: 70% ;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 100px ;
+}  
+
+/*---------------------------------------------------------------------------------------*/
+
+
+footer {
+    width: 100%;
+    height: 700px;
+}
+#ja{
+    margin: 3% 0 0 12%;
+    padding: 0;
+}
+#social{
+    padding: 0 ;
+}
+
+.icon_footer{
+    float: left;
+    width: 30px;
+    padding-right: 5px;
+}
+.c{
+    padding-right: 0;
+}
+.contato{    
+    float: left;
+    padding-top: 0px;
+    padding-left: 5px;
+}
+#a{
+    transform: translateX(30px) ;
+}
+#b{
+    transform: translateX(250px) translateY(-37px);
+}
+#c{
+    transform: translateX(300px) translateY(-37px);
+}
+/*---------------------------------------------------------------------------------------*/
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@media all and (max-width: 425px) {
+    
+    body{
+        display: block;
+    }
+
+    
+    .coluna, .dois, .quatro{
+        display: block;
+        width: 80vw;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    /*---------------------------------------MENU RESPONSIVO---------------------------------*/
+#visibilidade{
+    visibility: visible;
+}
+#icone_menu{
+    width: 30px;
+}
+#check{
+    display: none;
+}
+#icone_responsivo{
+    cursor: pointer;
+    padding: 2px 10px ;
+    position: fixed;
+    z-index: 12;
+}
+.menu_responsivo{
+    background-color: #495f2c;
+    height: 37.5%;
+    width: 100px;
+    position: fixed;
+    z-index: 11;
+    transition: all .2s linear;
+    left: -100px;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+}
+nav a{
+    text-decoration: none;
+}
+.link_responsivo{
+    background-color:#495f2c7a;
+    padding: 5px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid #3b4e22;
+    opacity: 0;
+    margin-top: 1px ;
+    text-align: center;
+}
+.link_responsivo:hover{
+    background-color: #2d4114;
+}
+#check:checked ~ .menu_responsivo{
+    transform: translateX(100px);
+}
+#check:checked ~ .menu_responsivo nav a .link_responsivo{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*----------------------------------------HEADER-----------------------------------------*/
+    header{
+        height: 40px;
+        width: 100vw;
+    }
+    #logodiv{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #logo{
+        width: 65px;
+        top: -15px;
+        padding: 0;
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
+    #menu{
+        visibility: hidden;
+    }
+/*-------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------CAPA-----------------------------------------*/
+    #efeito{
+        height: 80vw;
+    }
+    #imagem-fundo{
+    background: url(img/CAPA.jpg);
+    height: 80vw;
+    width: 100vw;
+    text-align: center;
+    background-size: cover;
+    }
+    #titulo{
+    font-size: 15vw; 
+    margin: 0 25vw;
+    padding-top: 20vw;
+    border-bottom: 1vw rgba(250, 250, 250, 0.575) double;
+    }
+    #subtitulo{
+    border-top: 1vw rgb(57 98 13) double;
+    font-size: 4vw;
+    }
+    #link_ods2{
+    font-size: 2vw;
+    }
+    #link_ods2:hover{
+    font-size: 2.1vw;
+    }
+    #minutos{
+        visibility: hidden;
+    }
+/*-------------------------------------------------------------------------------------*/
+
+/*-----------------------------O PROJETO SEÇÃO 1-----------------------------------*/
+#projeto_responsivo{
+    transform: translateX(-5px)
+}
+#projeto{
+    width: 96vw;
+    height: 300%;
+    border-left: 5vw #dfa738 solid;
+}
+#d_img_ods{
+    padding-top: 20vw;
+    width: 100%;
+}
+#img_ods{
+    padding-top: 5%;
+    width: 50%;
+}
+#o_projeto{
+    padding: 0;
+}
+#conteudo1{
+    padding-left: 8%;
+    padding-top: 6vw ;
+}
+#conteudo1_1{
+    top: -20px;
+}
+
+/*---------------------------------------------------------------------------------------*/ 
+
+/*-----------------------------METAS SEÇÃO 2-----------------------------------*/
+#meta_responsivo{
+    transform: translateX(-1px);
+}
+#metas{
+    height: 300%;
+    width: 95vw;
+    border-left: 5vw #a7c73a solid ;
+}
+.icon{
+    width: 15vw;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*-----------------------------O BRASIL SEÇÃO 3-----------------------------------*/
+#brasil_responsivo{
+    transform: translateX(-15px);
+}
+#brasil{
+    height: 250%;
+    width: 100vw;
+    border-left: 5vw #fd4b15 solid ;
+}
+
+#conteudo2{
+    text-align: none;
+}
+
+#titulo-grafico{
+    padding-top: 30px;
+}
+
+#grafico{
+    padding-left: 5vw;
+    right: 2vw;
+}
+
+/*-------              GRAFICO             -------*/
+.grafico-barras{
+    height: 400px ;
+}
+
+.grafico-barras .colunas .escala-y .divisao{
+    font-size: 14px;
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao{
+    width: calc(80% / 9);
+}
+
+.grafico-barras .colunas .area-grafico .area-barras .divisao .barra{
+    width: 40% ;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x{
+    font-size: 14px;
+}
+
+.grafico-barras .colunas .area-grafico .escala-x .divisao{
+    width: calc(80% / 9);
+}
+/*----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+/*-----------------------------PANDEMIA SEÇÃO 4---------------------------------------*/
+#pandemia_responsivo{
+    transform: translateX(-5px);
+}
+#pandemia{ 
+    height: 200%;
+    width: 95.1vw;
+    border-left: 5vw rgb(255, 255, 30) solid ;
+}
+#video_pandemia{
+    padding-bottom: 30px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*-------------------------------MOVA-SE SEÇÃO 5---------------------------------------*/
+#mova_responsivo{
+    transform: translateX(-5px);
+}
+#mova{
+    width: 95vw;
+    height: 660%;
+    border-left: 5vw #ea2d13 solid ;
+}
+#crianca1{
+    margin: 20px 0;
+    width: 70%;
+    border-radius: 10px;
+}
+.img_ong{
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+}
+.link_mova:hover{
+   color: #ea2c13e8 ; 
+   transition-property: all;
+   transition-duration: 0.2s;
+}
+#ong4{
+    margin-top: -35px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*-------------------------------SOBRE MIM SEÇÃO 6-------------------------------------*/
+#sobre{
+    width: 95vw;
+    border-left: 5vw #669f98 solid ;
+    height: 170%;
+}
+#myphoto{
+    width: 70% ;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 60px ;
+}  
+
+/*---------------------------------------------------------------------------------------*/
+
+
+footer {
+    width: 100%;
+    height: 700px;
+}
+#ja{
+    margin: 3% 0 0 12%;
+    padding: 0;
+}
+#social{
+    padding: 0 ;
+}
+
+.icon_footer{
+    float: left;
+    width: 20px;
+    padding-right: 5px;
+}
+.c{
+    padding-right: 0;
+}
+.contato{    
+    float: left;
+    padding-top: 0px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+#a{
+    transform: translateX(1px) ;
+}
+#b{
+    transform: translateX(1px) translateY(1px);
+}
+#c{
+    transform: translateX(30px) translateY(1px);
+}
+/*---------------------------------------------------------------------------------------*/
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@media all and (max-width: 375px){
+
+ /*---------------------------------------MENU RESPONSIVO---------------------------------*/
+ #visibilidade{
+    visibility: visible;
+}
+#icone_menu{
+    width: 30px;
+}
+#check{
+    display: none;
+}
+#icone_responsivo{
+    cursor: pointer;
+    padding: 2px 10px ;
+    position: fixed;
+    z-index: 12;
+}
+.menu_responsivo{
+    background-color: #495f2c;
+    height: 48%;
+    width: 100px;
+    position: fixed;
+    z-index: 11;
+    transition: all .2s linear;
+    left: -100px;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+}
+nav a{
+    text-decoration: none;
+}
+.link_responsivo{
+    background-color:#495f2c7a;
+    padding: 5px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid #3b4e22;
+    opacity: 0;
+    margin-top: 1px ;
+    text-align: center;
+}
+.link_responsivo:hover{
+    background-color: #2d4114;
+}
+#check:checked ~ .menu_responsivo{
+    transform: translateX(100px);
+}
+#check:checked ~ .menu_responsivo nav a .link_responsivo{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*-------------------------------MOVA-SE SEÇÃO 5---------------------------------------*/
+#mova_responsivo{
+    transform: translateX(-5px);
+}
+#mova{
+    width: 95vw;
+    height: 680%;
+    border-left: 5vw #ea2d13 solid ;
+}
+#crianca1{
+    margin: 20px 0;
+    width: 70%;
+    border-radius: 10px;
+}
+.img_ong{
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+}
+.link_mova:hover{
+   color: #ea2c13e8 ; 
+   transition-property: all;
+   transition-duration: 0.2s;
+}
+#ong4{
+    margin-top: -35px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*-------------------------------SOBRE MIM SEÇÃO 6-------------------------------------*/
+#sobre{
+    width: 95vw;
+    border-left: 5vw #669f98 solid ;
+    height: 190%;
+}
+#myphoto{
+    width: 70% ;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 45px ;
+}  
+
+/*---------------------------------------------------------------------------------------*/
+
+
+footer {
+    width: 100%;
+    height: 700px;
+}
+#ja{
+    margin: 3% 0 0 12%;
+    padding: 0;
+}
+#social{
+    padding: 0 ;
+}
+
+.icon_footer{
+    float: left;
+    width: 20px;
+    padding-right: 5px;
+}
+.c{
+    padding-right: 0;
+}
+.contato{    
+    float: left;
+    padding-top: 0px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+#a{
+    transform: translateX(1px) translateY(-5px) ;
+}
+#b{
+    transform: translateX(1px) translateY(-10px);
+}
+#c{
+    transform: translateX(30px) translateY(-10px);
+}
+/*---------------------------------------------------------------------------------------*/
+}
